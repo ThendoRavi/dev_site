@@ -1,0 +1,26 @@
+# .cpanel.yml
+
+# This specifies the version of the file format
+---
+# The version of the configuration file format
+version: 1
+
+# The commands section specifies the build process
+commands:
+  # Install dependencies using npm
+  - /opt/cpanel/ea-nodejs16/bin/npm install
+
+  # Run the build script defined in your package.json
+  - /opt/cpanel/ea-nodejs16/bin/npm run build
+
+# The deployment section specifies where to copy the build output
+deployment:
+  # Specify the source for the build files, typically the 'dist' directory for Vite
+  source: dist/
+
+  # Specify the destination for the build files
+  destination: public_html/
+
+# This will ensure that the environment variables, if any, are set correctly
+variables:
+  NODE_ENV: production

@@ -1,72 +1,52 @@
-import React from "react";
-import Logo from "../assets/dev.png";
-import { BsCart2 } from "react-icons/bs";
-import { HiOutlineBars3 } from "react-icons/hi2";
-import {
-  Box,
-  Drawer,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
+import { Link } from "react-router-dom";
+import hero from "../assets/logo.png";
+import "../App.css";
 
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-
-function NavBar() {
-  const [open, setOpen] = React.useState(false);
-  const menuOptions = [
-    { icon: <HomeIcon />, text: "Home" },
-    { icon: <InfoIcon />, text: "About" },
-    { icon: <CommentRoundedIcon />, text: "Contact" },
-    { icon: <PhoneRoundedIcon />, text: "Call" },
-    { icon: <ShoppingCartRoundedIcon />, text: "Cart" },
-  ];
-
+export default function NavBar() {
   return (
-    <nav>
-      <div className="nav-logo-container">
-        <img src={Logo} alt="logo" className="nav-logo" />
-      </div>
-      <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Call</a>
-        <a href="">
-          <BsCart2 className="navbar-cart-icon" />
-        </a>
-        <button className="primary-button">Book</button>
-      </div>
-      <div className="navbar-menu-container">
-        <HiOutlineBars3 onClick={() => setOpen(true)} />
-      </div>
-      <Drawer open={open} onClose={() => setOpen(false)} anchor="right">
-        <Box
-          sx={{ width: 250 }}
-          role="presentation"
-          onClick={() => setOpen(false)}
-          onKeyDown={() => setOpen(false)}
+    <header className="px-4 lg:px-6 h-14 flex items-center justify-between">
+      <div className="flex items-center gap-4 sm:gap-6">
+        <Link
+          href="#"
+          className="flex items-center justify-center text-black hover:text-[#7D9B76]"
+          //prefetch={false}
         >
-          <List>
-            {menuOptions.map((option, index) => (
-              <ListItem key={option.text}>
-                <ListItemButton>
-                  <ListItemIcon>{option.icon}</ListItemIcon>
-                  <ListItemText primary={option.text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-        </Box>
-      </Drawer>
-    </nav>
+          <img
+            src={hero}
+            width="45"
+            height="45"
+            alt="Logo"
+            //className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+          />
+          <span className="sr-only">SaferCommunity</span>
+        </Link>
+        <nav className="flex gap-4 sm:gap-6">
+          <a
+            href="#about"
+            className="text-xl text-black hover:text-[#7D9B76] font-medium hover:underline underline-offset-4"
+          >
+            Home
+          </a>
+          <a
+            href="#features"
+            className="text-xl text-black hover:text-[#7D9B76] cursor-pointer font-medium hover:underline underline-offset-4"
+          >
+            About
+          </a>
+          <a
+            href="#features"
+            className="text-xl text-black hover:text-[#7D9B76] cursor-pointer font-medium hover:underline underline-offset-4"
+          >
+            Projects
+          </a>
+          <a
+            href="#features"
+            className="text-xl text-black hover:text-[#7D9B76] cursor-pointer font-medium hover:underline underline-offset-4"
+          >
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
   );
 }
-
-export default NavBar;

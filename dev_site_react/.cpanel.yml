@@ -1,26 +1,32 @@
-# .cpanel.yml
-
-# This specifies the version of the file format
 ---
-# The version of the configuration file format
-version: 1
-
-# The commands section specifies the build process
-commands:
-  # Install dependencies using npm
-  - /opt/cpanel/ea-nodejs16/bin/npm install
-
-  # Run the build script defined in your package.json
-  - /opt/cpanel/ea-nodejs16/bin/npm run build
-
-# The deployment section specifies where to copy the build output
 deployment:
-  # Specify the source for the build files, typically the 'dist' directory for Vite
-  source: dist/
+  tasks:
+    - export DEPLOYPATH=${DEPLOYPATH:-/home/$USER/public_html}
+    - export NODE_VERSION=16.14.0 # Set the Node.js version
+    - echo "Deploying application to $DEPLOYPATH"
 
-  # Specify the destination for the build files
-  destination: public_html/
+    - step: Install Node.js
+      command: |
+        if ! node -v | grep -q $NODE_VERSION; then
+          echo "Installing Node.js $NODE_VERSION"
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+          . ~/.nvm/nvm.sh
+          nvm install $NODE_VERSION
+          nvm use $NODE_VERSION
+          nvm alias default $NODE_VERSION
+        fi
 
-# This will ensure that the environment variables, if any, are set correctly
-variables:
-  NODE_ENV: production
+    - step: Install Dependencies
+      command: |
+        echo "Installing dependencies"
+        npm install
+
+    - step: Build Application
+      command: |
+        echo "Building the application"
+        npm run build
+
+    - step: Deploy Application
+      command: |
+        echo "Deploying the application"
+        rsync -av --delete-after dist/ $DEPLOYPATH/

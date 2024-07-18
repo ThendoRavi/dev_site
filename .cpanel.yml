@@ -1,4 +1,3 @@
-# .cpanel.yml
 ---
 deployment:
   tasks:

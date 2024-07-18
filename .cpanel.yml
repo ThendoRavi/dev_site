@@ -4,7 +4,7 @@ deployment:
     - export DEPLOY_PATH=/home/thendo/public_html
     - export REPOSITORY_ROOT=/home/thendo/repositories/dev_site
 
-    - /bin/sh:
+    - /bin/cp:
         command: |
           set -e
 

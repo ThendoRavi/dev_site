@@ -6,11 +6,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import "./App.css";
 
-const basename = process.env.NODE_ENV === "production" ? "/dev_site" : "/";
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter basename="/dev_site">
       <App />
     </BrowserRouter>
   </React.StrictMode>

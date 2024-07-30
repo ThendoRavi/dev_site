@@ -33,7 +33,7 @@ export default function NavBar() {
           >
             About
           </a>
-          <a
+          {/*<a
             href="#features"
             className="text-xl text-black hover:text-[#7D9B76] cursor-pointer font-medium hover:underline underline-offset-4"
           >
@@ -44,7 +44,7 @@ export default function NavBar() {
             className="text-xl text-black hover:text-[#7D9B76] cursor-pointer font-medium hover:underline underline-offset-4"
           >
             Contact
-          </a>
+          </a>*/}
         </nav>
       </div>
     </header>

@@ -1,0 +1,40 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch name if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Change this to your desired Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to cPanel
+        env:
+          CPANEL_USERNAME: ${{ secrets.CPANEl_USERNAME }}
+          CPANEL_TOKEN: ${{ secrets.CPANEl_TOKEN }}
+          CPANEL_DOMAIN: ${{ secrets.CPANEl_DOMAIN }}
+        run: |
+          curl -s -X POST "https://${CPANEL_DOMAIN}:2083/json-api/cpanel" \
+          -d "cpanel_jsonapi_user=${CPANEL_USERNAME}" \
+          -d "cpanel_jsonapi_apiversion=2" \
+          -d "cpanel_jsonapi_module=Fileman" \
+          -d "cpanel_jsonapi_func=uploadfiles" \
+          -d "arg1=public_html/dist/" \
+          -F "file=@dist/*" \
+          -u "${CPANEL_USERNAME}:${CPANEL_TOKEN}"

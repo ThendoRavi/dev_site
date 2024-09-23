@@ -1,0 +1,13 @@
+# .cpanel.yml
+
+deployment:
+  tasks:
+    - export DEPLOY_ENV=production
+    - npm install
+    - npm run build
+    - |
+      echo "Deployment completed!"
+
+hooks:
+  post_deploy:
+    - npm run preview

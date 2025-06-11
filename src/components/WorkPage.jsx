@@ -944,7 +944,7 @@ export default function WorkPage() {
                     <h3 className="font-bold text-gray-800 mb-1">Email Me</h3>
                     <a
                       href="mailto:ravhenganiwebsolutions@gmail.com"
-                      className="text-[#5D3A9B] hover:underline"
+                      className="text-[#5D3A9B] hover:underline text-sm"
                     >
                       ravhenganiwebsolutions@gmail.com
                     </a>

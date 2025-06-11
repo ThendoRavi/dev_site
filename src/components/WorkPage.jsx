@@ -32,7 +32,7 @@ import testimonial1 from "../assets/profile.jpg";
 import testimonial2 from "../assets/profile.jpg";
 import testimonial3 from "../assets/profile.jpg";
 
-export default function LandingPage() {
+export default function WorkPage() {
   const [activeTab, setActiveTab] = useState("wordpress");
   const [isVisible, setIsVisible] = useState({});
   const [activeTestimonial, setActiveTestimonial] = useState(0);

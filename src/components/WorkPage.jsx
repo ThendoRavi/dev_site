@@ -28,6 +28,7 @@ import project1 from "../assets/witssdasm.png";
 import project3 from "../assets/phapano.png";
 import project2 from "../assets/fat-guys.jpg";
 import commongrounds from "../assets/commongrounds.png";
+import campusSafety from "../assets/campusSafety.png";
 import testimonial1 from "../assets/profile.jpg";
 import testimonial2 from "../assets/profile.jpg";
 import testimonial3 from "../assets/profile.jpg";
@@ -137,7 +138,7 @@ export default function WorkPage() {
     custom: [
       {
         title: "Campus Safety App",
-        image: testimonial3,
+        image: campusSafety,
         description:
           "Real-time campus security application with incident reporting.",
         technologies: ["React", "Node.js", "MongoDB", "Express"],
@@ -181,7 +182,7 @@ export default function WorkPage() {
         "Contact form",
         "Social media integration",
       ],
-      color: "from-teal-500 to-emerald-500",
+      color: "from-teal-600 to-emerald-600",
     },
     {
       title: "Business Website",
@@ -294,26 +295,26 @@ export default function WorkPage() {
               href="#"
               className="text-xl font-bold text-gray-900 flex items-center gap-2 no-underline"
             >
-              <p className="text-teal-500 no-underline">TR</p>
+              <p className="text-[#5D3A9B] no-underline">TR</p>
               <p className="hidden sm:inline no-underline">Thendo Ravhengani</p>
             </a>
 
             <nav className="hidden md:flex items-center space-x-1">
               <button
                 onClick={() => scrollToSection("home")}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#5D3A9B] transition-colors"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#5D3A9B] transition-colors"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#5D3A9B] transition-colors"
               >
                 Services & Pricing 
               </button>
@@ -325,13 +326,13 @@ export default function WorkPage() {
               </button> */}
               <button
                 onClick={() => scrollToSection("portfolio")}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#5D3A9B] transition-colors"
               >
                 Previous Work
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="ml-2 px-4 py-2 text-sm font-medium bg-teal-500 text-white rounded-full hover:bg-teal-600 transition-colors"
+                className="ml-2 px-4 py-2 text-sm font-medium bg-[#5D3A9B] text-white rounded-full hover:bg-[#9668e6] transition-colors"
               >
                 Contact Me
               </button>
@@ -363,9 +364,9 @@ export default function WorkPage() {
         <section id="home" className="relative overflow-hidden py-20 md:py-32">
           {/* Animated background elements */}
           <div className="absolute inset-0 z-0">
-            <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-teal-200 mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-            <div className="absolute top-40 right-10 w-72 h-72 rounded-full bg-blue-200 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-            <div className="absolute bottom-20 left-1/3 w-80 h-80 rounded-full bg-emerald-200 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+            <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#5D3A9B] mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div className="absolute top-40 right-10 w-72 h-72 rounded-full bg-[#008080] mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div className="absolute bottom-20 left-1/3 w-80 h-80 rounded-full bg-[#FFD700] mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
           </div>
 
           <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -394,7 +395,7 @@ export default function WorkPage() {
                   <div className="flex flex-wrap gap-4 pt-4">
                     <a
                       href="/"
-                      className="px-6 py-3 text-base no-underline font-medium bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors flex items-center gap-2"
+                      className="px-6 py-3 text-base no-underline font-medium bg-[#5D3A9B] text-white rounded-lg hover:bg-[#9d70f1] transition-colors flex items-center gap-2"
                     >
                       View My Portfolio
                       <ChevronRight size={18} />
@@ -417,7 +418,7 @@ export default function WorkPage() {
                 className="relative mx-auto lg:ml-auto"
               >
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-full blur-xl opacity-20 animate-pulse"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#5D3A9B] to-[#422674] rounded-full blur-xl opacity-20 animate-pulse"></div>
                   <div className="relative bg-white p-2 rounded-full shadow-xl">
                     <div className="rounded-full overflow-hidden border-4 border-white shadow-inner">
                       <img
@@ -447,12 +448,12 @@ export default function WorkPage() {
         >
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="inline-block bg-gradient-to-r from-teal-500/10 to-emerald-500/10 px-4 py-1.5 rounded-full">
-                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-emerald-600">
+              <div className="inline-block bg-gradient-to-r from-[#5D3A9B]/10 to-[#5D3A9B]/10 px-4 py-1.5 rounded-full">
+                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B]">
                   Who I Am
                 </h2>
               </div>
-              <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-2"></div>
+              <div className="h-1 w-20 bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B] rounded-full my-2"></div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -506,7 +507,7 @@ export default function WorkPage() {
                   </div>
                 </div>
                 <a href="/#education" className=" block no-underline mt-3">
-                  <div className="bg-gradient-to-r from-teal-50 to-emerald-50 rounded-lg p-6">
+                  <div className="bg-gradient-to-r from-[#7c5cb4]/5 to-[#5D3A9B]/5 rounded-lg p-6">
                     <h4 className="font-bold text-gray-800 mb-2">Education</h4>
                     <p className="text-gray-700">
                       <span className="font-medium">BSc Honors in Computer Science</span>
@@ -533,12 +534,12 @@ export default function WorkPage() {
         >
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="inline-block bg-gradient-to-r from-teal-500/10 to-emerald-500/10 px-4 py-1.5 rounded-full">
-                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-emerald-600">
+              <div className="inline-block bg-gradient-to-r from-[#7c5cb4]/10 to-[#5D3A9B]/10 px-4 py-1.5 rounded-full">
+                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B]">
                   Website Services I Provide
                 </h2>
               </div>
-              <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-2"></div>
+              <div className="h-1 w-20 bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B] rounded-full my-2"></div>
               <p className="max-w-[800px] text-gray-700 text-lg">
                 From simple portfolio sites to full-featured eCommerce
                 platforms, I offer a range of web development services tailored
@@ -576,7 +577,7 @@ export default function WorkPage() {
                         <span className="text-sm font-medium text-gray-700 mr-2">
                           Starting at:
                         </span>
-                        <span className="text-sm font-bold text-teal-600">
+                        <span className="text-sm font-bold text-[#5D3A9B]">
                           {service.startingPrice}
                         </span>
                       </div>
@@ -592,7 +593,7 @@ export default function WorkPage() {
                             className="text-sm text-gray-600 flex items-start"
                           >
                             <svg
-                              className="h-5 w-5 text-teal-500 mr-2 flex-shrink-0"
+                              className="h-5 w-5 text-[#5D3A9B] mr-2 flex-shrink-0"
                               fill="none"
                               viewBox="0 0 24 24"
                               stroke="currentColor"
@@ -731,12 +732,12 @@ export default function WorkPage() {
         >
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="inline-block bg-gradient-to-r from-teal-500/10 to-emerald-500/10 px-4 py-1.5 rounded-full">
-                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-emerald-600">
+              <div className="inline-block bg-gradient-to-r from-[#7c5cb4]/10 to-[#5D3A9B]/10 px-4 py-1.5 rounded-full">
+                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B]">
                   Previous Work
                 </h2>
               </div>
-              <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-2"></div>
+              <div className="h-1 w-20 bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B] rounded-full my-2"></div>
               <p className="max-w-[800px] text-gray-700 text-lg">
                 Browse through my recent projects to see examples of my work and
                 the range of websites I've created.
@@ -750,7 +751,7 @@ export default function WorkPage() {
                   onClick={() => setActiveTab("wordpress")}
                   className={`px-4 py-2 text-sm font-medium rounded-md ${
                     activeTab === "wordpress"
-                      ? "bg-white text-teal-600 shadow-sm"
+                      ? "bg-white text-[#5D3A9B] shadow-sm"
                       : "text-gray-600 hover:text-gray-900"
                   }`}
                 >
@@ -760,7 +761,7 @@ export default function WorkPage() {
                   onClick={() => setActiveTab("custom")}
                   className={`px-4 py-2 text-sm font-medium rounded-md ${
                     activeTab === "custom"
-                      ? "bg-white text-teal-600 shadow-sm"
+                      ? "bg-white text-[#5D3A9B] shadow-sm"
                       : "text-gray-600 hover:text-gray-900"
                   }`}
                 >
@@ -802,7 +803,7 @@ export default function WorkPage() {
                     </div>
                     <a
                       href={project.link}
-                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium"
+                      className="inline-flex items-center text-[#5D3A9B] hover:text-[#422674] font-medium"
                     >
                       View Project <ArrowRight size={16} className="ml-1" />
                     </a>
@@ -833,17 +834,17 @@ export default function WorkPage() {
         >
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="inline-block bg-gradient-to-r from-teal-500/10 to-emerald-500/10 px-4 py-1.5 rounded-full">
-                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-emerald-600">
+              <div className="inline-block bg-gradient-to-r from-[#7c5cb4]/10 to-[#5D3A9B]/10 px-4 py-1.5 rounded-full">
+                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B]">
                   What My Clients Say
                 </h2>
               </div>
-              <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-2"></div>
+              <div className="h-1 w-20 bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B] rounded-full my-2"></div>
             </div>
 
             <div className="max-w-4xl mx-auto mt-12 relative">
-              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-teal-50 to-emerald-50 p-8 md:p-12 shadow-sm">
-                <div className="absolute top-0 left-0 w-20 h-20 text-teal-200 opacity-20">
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#7c5cb4]/5 to-[#5D3A9B]/5 p-8 md:p-12 shadow-sm">
+                <div className="absolute top-0 left-0 w-20 h-20 text-[#5D3A9B] opacity-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -899,7 +900,7 @@ export default function WorkPage() {
                     onClick={() => setActiveTestimonial(index)}
                     className={`w-3 h-3 rounded-full ${
                       activeTestimonial === index
-                        ? "bg-teal-500"
+                        ? "bg-[#5D3A9B]"
                         : "bg-gray-300 hover:bg-gray-400"
                     } transition-colors`}
                     aria-label={`View testimonial ${index + 1}`}
@@ -920,12 +921,12 @@ export default function WorkPage() {
         >
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="inline-block bg-gradient-to-r from-teal-500/10 to-emerald-500/10 px-4 py-1.5 rounded-full">
-                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-emerald-600">
+              <div className="inline-block bg-gradient-to-r from-[#7c5cb4]/10 to-[#5D3A9B]/10 px-4 py-1.5 rounded-full">
+                <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B]">
                   Let's Work Together
                 </h2>
               </div>
-              <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-2"></div>
+              <div className="h-1 w-20 bg-gradient-to-r from-[#7c5cb4] to-[#5D3A9B] rounded-full my-2"></div>
               <p className="max-w-[800px] text-gray-700 text-lg">
                 Ready to start your project? Get in touch and let's discuss how
                 I can help bring your vision to life.
@@ -935,14 +936,14 @@ export default function WorkPage() {
             <div className="max-w-4xl mx-auto grid md:grid-cols-5 gap-8 mt-12">
               <div className="md:col-span-2 space-y-6">
                 <div className="bg-white rounded-xl shadow-md p-6 flex items-start">
-                  <div className="bg-teal-100 p-3 rounded-full mr-4">
-                    <Mail className="h-6 w-6 text-teal-600" />
+                  <div className="bg-[#e4daf5] p-3 rounded-full mr-4">
+                    <Mail className="h-6 w-6 text-[#5D3A9B]" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Email Me</h3>
                     <a
                       href="mailto:thendorav@gmail.com"
-                      className="text-teal-600 hover:underline"
+                      className="text-[#5D3A9B] hover:underline"
                     >
                       thendorav@gmail.com
                     </a>
@@ -950,14 +951,14 @@ export default function WorkPage() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow-md p-6 flex items-start">
-                  <div className="bg-teal-100 p-3 rounded-full mr-4">
-                    <MessageSquare className="h-6 w-6 text-teal-600" />
+                  <div className="bg-[#e4daf5] p-3 rounded-full mr-4">
+                    <MessageSquare className="h-6 w-6 text-[#5D3A9B]" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">WhatsApp</h3>
                     <a
                       href="https://wa.me/27622154782"
-                      className="text-teal-600 hover:underline"
+                      className="text-[#5D3A9B] hover:underline"
                     >
                       +27 62 215 4782
                     </a>
@@ -1089,7 +1090,7 @@ export default function WorkPage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="text-2xl font-bold mb-4 flex items-center">
-                <span className="text-teal-400 mr-2">TR</span>
+                <span className="text-[#5D3A9B] mr-2">TR</span>
                 Thendo Ravhengani
               </div>
               <p className="text-gray-400 max-w-md">
@@ -1104,7 +1105,7 @@ export default function WorkPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection("home")}
-                    className="text-gray-400 hover:text-teal-400"
+                    className="text-gray-400 hover:text-[#5D3A9B]"
                   >
                     Home
                   </button>
@@ -1112,7 +1113,7 @@ export default function WorkPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection("about")}
-                    className="text-gray-400 hover:text-teal-400"
+                    className="text-gray-400 hover:text-[#5D3A9B]"
                   >
                     About
                   </button>
@@ -1120,7 +1121,7 @@ export default function WorkPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection("services")}
-                    className="text-gray-400 hover:text-teal-400"
+                    className="text-gray-400 hover:text-[#5D3A9B]"
                   >
                     Services & Pricing
                   </button>
@@ -1128,7 +1129,7 @@ export default function WorkPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection("portfolio")}
-                    className="text-gray-400 hover:text-teal-400"
+                    className="text-gray-400 hover:text-[#5D3A9B]"
                   >
                     Previous Work
                   </button>
@@ -1144,7 +1145,7 @@ export default function WorkPage() {
                 <li>
                   <button
                     onClick={() => scrollToSection("contact")}
-                    className="text-gray-400 hover:text-teal-400"
+                    className="text-gray-400 hover:text-[#5D3A9B]"
                   >
                     Contact
                   </button>

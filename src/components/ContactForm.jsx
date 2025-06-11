@@ -23,7 +23,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/contact-form", {
+      const response = await fetch("https://dev-site-backend.onrender.com/api/contact-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

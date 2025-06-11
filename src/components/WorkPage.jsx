@@ -316,7 +316,7 @@ export default function WorkPage() {
                 onClick={() => scrollToSection("services")}
                 className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#5D3A9B] transition-colors"
               >
-                Services & Pricing 
+                Services & Pricing
               </button>
               {/* <button
                 onClick={() => scrollToSection("pricing")}
@@ -510,15 +510,16 @@ export default function WorkPage() {
                   <div className="bg-gradient-to-r from-[#7c5cb4]/5 to-[#5D3A9B]/5 rounded-lg p-6">
                     <h4 className="font-bold text-gray-800 mb-2">Education</h4>
                     <p className="text-gray-700">
-                      <span className="font-medium">BSc Honors in Computer Science</span>
+                      <span className="font-medium">
+                        BSc Honors in Computer Science
+                      </span>
                       <br />
                       University of Witwatersrand
                       <br />
-                      2025 -  (Current)
+                      2025 - (Current)
                     </p>
                   </div>
                 </a>
-                
               </div>
             </div>
           </div>
@@ -555,7 +556,7 @@ export default function WorkPage() {
                 >
                   <div
                     className={`h-2 bg-gradient-to-r ${service.color}`}
-                  ></div>  
+                  ></div>
                   <div className="p-6 flex-grow">
                     <h3 className="text-xl font-bold text-gray-800 mb-2">
                       {service.title}
@@ -942,10 +943,10 @@ export default function WorkPage() {
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Email Me</h3>
                     <a
-                      href="mailto:thendorav@gmail.com"
+                      href="mailto:ravhenganiwebsolutions@gmail.com"
                       className="text-[#5D3A9B] hover:underline"
                     >
-                      thendorav@gmail.com
+                      ravhenganiwebsolutions@gmail.com
                     </a>
                   </div>
                 </div>
@@ -1075,10 +1076,7 @@ export default function WorkPage() {
                 </form>
               </div> */}
 
-              
-            <ContactForm />
-
-              
+              <ContactForm />
             </div>
           </div>
         </section>
@@ -1171,7 +1169,7 @@ export default function WorkPage() {
                   <Github className="h-5 w-5" />
                 </a>
                 <a
-                  href="mailto:thendorav@gmail.com"
+                  href="mailto:ravhenganiwebsolutions@gmail.com"
                   className="bg-gray-800 p-2 rounded-full hover:bg-gray-700 transition-colors"
                   aria-label="Email"
                 >

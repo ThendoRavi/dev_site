@@ -37,6 +37,7 @@ import learner from "../assets/brain.png";
 import communication from "../assets/conversation.png";
 import fatguys from "../assets/fat-guys.jpg";
 import witssdasm from "../assets/witssdasm.png";
+import worksite from "../assets/worksite.png";
 
 import "../App.css";
 
@@ -900,6 +901,76 @@ function Home() {
                   </div>
                 </div>
               </div>
+
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                <div className="md:flex">
+                  <div className="md:w-2/3 p-8">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                      My Work: Freelance Web Developer
+                    </h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      As a freelance web developer, I specialize in building
+                      modern, responsive websites that blend aesthetic appeal
+                      with strong functionality. My work is rooted in a passion
+                      for clean design, efficient code, and meaningful user
+                      experiences.
+                    </p>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      I primarily work with:
+                      <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>
+                          <strong>WordPress</strong> – for flexible,
+                          content-driven websites that are easy for clients to
+                          manage.
+                        </li>
+                        <li>
+                          <strong>JavaScript (React, Vanilla JS)</strong> – to
+                          create dynamic and interactive features tailored to
+                          user needs.
+                        </li>
+                        <li>
+                          <strong>UI/UX Principles</strong> – ensuring that
+                          every site is intuitive, accessible, and visually
+                          engaging.
+                        </li>
+                      </ul>
+                    </p>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      From church and community websites to professional
+                      portfolios and business pages, I help individuals and
+                      organizations establish a strong online presence. Whether
+                      you're looking for a full website build, a redesign, or
+                      custom functionality, I bring technical skill and creative
+                      insight to every project.
+                    </p>
+                    <p className="text-gray-500 italic mb-6">
+                      Let’s build something impactful together.
+                    </p>
+
+                    <div className="flex items-center gap-4">
+                      <a
+                        href="/work"
+                        target="_blank"
+                        className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
+                        rel="noreferrer"
+                      >
+                        <ExternalLink size={18} />
+                        View More
+                      </a>
+                    </div>
+                  </div>
+                  <div className="md:w-1/3">
+                    <div className="h-full flex items-center justify-center bg-gray-50 p-4">
+                      <img
+                        src={worksite || "/placeholder.svg"}
+                        alt="Campus Safety App"
+                        className="w-full rounded-lg shadow-lg object-contain"
+                        style={{ maxHeight: "400px" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -967,7 +1038,7 @@ function Home() {
 
               <div className="mt-12 text-center">
                 <a
-                  href="#"
+                  href="/cv2025.pdf"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium"
                 >
                   Download CV

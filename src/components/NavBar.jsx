@@ -61,40 +61,38 @@ export default function NavBar() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center justify-between transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center justify-between transition-all duration-300 no-underline ${
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Link
           to="/"
-          className="flex items-center gap-2 z-50"
+          className="flex items-center gap-2 z-50 no-underline"
         >
-          <div className={`w-10 h-10 rounded-full overflow-hidden border-2 transition-all no-underline ${
-            scrolled ? "border-teal-500" : "border-white/50"
-          }`}>
-            <img
-              src={hero || "/placeholder.svg"}
-              alt="Thendo Ravhengani"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <a
+              href="/"
+              className="text-xl font-bold text-gray-900 flex items-center gap-2 no-underline"
+            >
+              <p className="text-teal-500 no-underline">TR</p>
+              <p className="hidden sm:inline no-underline">Thendo Ravhengani</p>
+            </a>
 
         </Link>
 
         {/* Mobile menu button */}
         <button 
-          className="lg:hidden z-50 flex flex-col justify-center items-center w-10 h-10 rounded-full bg-white shadow-md"
+          className="lg:hidden z-50 flex flex-col justify-center items-center w-10 h-10 rounded-full bg-white shadow-md no-underline"
           onClick={toggleNav}
           aria-label="Toggle menu"
         >
-          <span className={`block w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
+          <span className={`block w-5 h-0.5 bg-gray-800 transition-all duration-300 no-underline ${
+            isOpen ? "rotate-45 translate-y-1" : "-translate-y-1 no-underline"
           }`}></span>
-          <span className={`block w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
+          <span className={`block w-5 h-0.5 bg-gray-800 transition-all duration-300 no-underline ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}></span>
-          <span className={`block w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
+          <span className={`block w-5 h-0.5 bg-gray-800 transition-all duration-300 no-underline ${
             isOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
           }`}></span>
         </button>
@@ -112,7 +110,7 @@ export default function NavBar() {
               className={`px-4 py-2 mx-1 text-sm font-medium rounded-full transition-all no-underline ${
                 activeSection === section 
                   ? "bg-gradient-to-r from-teal-500 to-emerald-500 text-white underline" 
-                  : "text-gray-700 hover:bg-gray-100 "
+                  : "text-gray-700 hover:bg-gray-100 no-underline "
               }`}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -123,7 +121,7 @@ export default function NavBar() {
             href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 px-4 py-2 text-sm font-medium bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors flex items-center gap-1"
+            className="ml-2 px-4 py-2 text-sm font-medium bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors flex items-center gap-1 no-underline"
           >
             CV <ChevronDown size={14} />
           </a>
@@ -158,10 +156,10 @@ export default function NavBar() {
             ))}
             
             <a
-              href="/cv.pdf"
+              href="/cv2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 px-6 py-3 text-base font-medium bg-gradient-to-r from-teal-500 to-emerald-500 text-white rounded-full hover:opacity-90 transition-colors flex items-center gap-2"
+              className="mt-4 px-6 py-3 text-base font-medium bg-gradient-to-r from-teal-500 to-emerald-500 text-white rounded-full hover:opacity-90 transition-colors flex items-center gap-2 no-underline"
             >
               Curriculum Vitae <ChevronDown size={16} />
             </a>

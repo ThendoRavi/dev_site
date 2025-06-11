@@ -128,7 +128,7 @@ export default function WorkPage() {
         title: "Phapano NPO Website",
         image: project3,
         description:
-          "hapano is a non-profit organisation founded in 2024 to support psychology students in South Africa through mentorship, community, and access to information and opportunities",
+          "Phapano is a non-profit organisation founded in 2024 to support psychology students in South Africa through mentorship, community, and access to information and opportunities",
         technologies: ["WordPress", "ACF", "Elementor", "Custom Fields"],
         link: "https://phapano.com/",
         target: "_blank", // This will make the link open in a new tab
@@ -401,8 +401,8 @@ export default function WorkPage() {
                       <ChevronRight size={18} />
                     </a>
                     <a
-                      href="#services"
-                      className="px-6 py-3 text-base no-underline font-medium bg-white text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2"
+                      onClick={() => scrollToSection("services")}
+                      className="px-6 py-3 cursor-pointer text-base no-underline font-medium bg-white text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2"
                     >
                       Get a Website
                       <ChevronRight size={18} />

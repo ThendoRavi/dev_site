@@ -118,7 +118,7 @@ export default function NavBar() {
           ))}
           
           <a
-            href="/cv.pdf"
+            href="/cv_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 px-4 py-2 text-sm font-medium bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors flex items-center gap-1 no-underline"

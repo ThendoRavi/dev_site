@@ -38,6 +38,7 @@ import communication from "../assets/conversation.png";
 import fatguys from "../assets/fat-guys.jpg";
 import witssdasm from "../assets/witssdasm.png";
 import worksite from "../assets/worksite.png";
+import phapano from "../assets/phapano.png";
 
 import "../App.css";
 
@@ -161,8 +162,8 @@ function Home() {
                   </h1>
                   <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-4"></div>
                   <p className="text-lg text-gray-700 max-w-[600px] leading-relaxed">
-                    Computer Science graduate from the University of
-                    Witwatersrand. Currently pursuing my honours degree.
+                    Computer Science Honours graduate from the University of
+                    Witwatersrand, completed in 2025.
                     <br />I have a passion for software development and cloud
                     computing.
                   </p>
@@ -473,15 +474,92 @@ function Home() {
               </div>
               <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-2"></div>
               <p className="max-w-[900px] text-gray-700 md:text-lg leading-relaxed">
-                Currently have completed my bachelors degree in Computer Science
-                at the University of Witwatersrand. I have a strong foundation
-                in mathematics, computer science and software development
-                principles.
+                Completed my BSc Honours in Computer Science at the University 
+                of Witwatersrand in 2025, following my undergraduate degree. 
+                I have a strong foundation in mathematics, computer science and 
+                software development principles.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
-              {/* University Education */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+              {/* Honours Education */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-full -mr-20 -mt-20"></div>
+
+                <div className="relative z-10">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-gradient-to-br from-teal-500 to-emerald-500 w-12 h-12 rounded-lg flex items-center justify-center mr-4 shadow-md">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-white"
+                      >
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-800">
+                      BSc Honours in Computer Science
+                    </h3>
+                  </div>
+
+                  <div className="flex items-center mb-4">
+                    <p className="text-teal-600 font-bold">
+                      University of Witwatersrand
+                    </p>
+                    <span className="mx-2 text-gray-400">•</span>
+                    <p className="text-gray-500">2025 (Completed)</p>
+                  </div>
+
+                  <div className="mt-6">
+                    <h4 className="font-bold text-gray-700 mb-2">
+                      Research Topic
+                    </h4>
+                    <a 
+                      href="https://github.com/ThendoRavi/Strict-vs.-Lenient-Tax-Enforcement-in-Sugarscape" 
+                      target="_blank"
+                      className="block text-teal-600 font-semibold bg-gradient-to-r from-teal-50 to-emerald-50 px-4 py-3 rounded-lg mb-4 hover:from-teal-100 hover:to-emerald-100 transition-all duration-300 hover:shadow-md border border-teal-200 hover:border-teal-300 cursor-pointer no-underline"
+                    >
+                      Investigating the Impact of Strict vs. Lenient Tax Enforcement in Agent-Based Models
+                    </a>
+                  </div>
+
+                  <div className="mt-4">
+                    <h4 className="font-bold text-gray-700 mb-3">
+                      Relevant Coursework
+                    </h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
+                         Natural Language Processing
+                      </div>
+                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
+                        Mathematical Foundations of Data Science 
+                      </div>
+                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
+                         Data Visualisation and Exploration
+                      </div>
+                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
+                        Reinforcement Learning
+                      </div>
+                       <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
+                        Artificial Intelligence
+                      </div>
+                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
+                        Adaptive Computation and Machine Learning
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Undergraduate Education */}
               <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-full -mr-20 -mt-20"></div>
 
@@ -515,11 +593,6 @@ function Home() {
                     </p>
                     <span className="mx-2 text-gray-400">•</span>
                     <p className="text-gray-500">2022 - 2024 (Completed)</p>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-teal-50 to-emerald-50 px-4 py-2 rounded-lg inline-block mb-6">
-                    <span className="font-bold text-gray-700">Average:</span>
-                    <span className="text-teal-600 font-bold ml-2">70+</span>
                   </div>
 
                   <div className="mt-6">
@@ -592,10 +665,6 @@ function Home() {
                     <p className="text-gray-500">Matriculated: 2021</p>
                   </div>
 
-                  <div className="bg-gradient-to-r from-teal-50 to-emerald-50 px-4 py-2 rounded-lg inline-block mb-6">
-                    <span className="font-bold text-gray-700">Average:</span>
-                    <span className="text-teal-600 font-bold ml-2">77+</span>
-                  </div>
 
                   <div className="mt-2">
                     <h4 className="font-bold text-gray-700 mb-3">
@@ -670,21 +739,10 @@ function Home() {
                       user-friendly experience on any device, keeping users
                       informed and connected at all times.
                     </p>
-                    <p className="text-gray-500 italic mb-6">
-                      Demo accounts are available through the GitHub link
-                      provided.
-                    </p>
+                   
 
                     <div className="flex items-center gap-4">
-                      <a
-                        href="https://campus-safety.azurewebsites.net/"
-                        target="_blank"
-                        className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
-                        rel="noreferrer"
-                      >
-                        <ExternalLink size={18} />
-                        View Live
-                      </a>
+                      
                       <a
                         href="https://github.com/ThendoRavi/campus-safety-app.git"
                         target="_blank"
@@ -729,21 +787,10 @@ function Home() {
                       a smooth and user-friendly experience across all devices
                       and screen sizes.
                     </p>
-                    <p className="text-gray-500 italic mb-6">
-                      Further information & demo accounts are available through
-                      the GitHub link provided.
-                    </p>
+                  
 
                     <div className="flex items-center gap-4">
-                      <a
-                        href="https://common-grounds-app.onrender.com/"
-                        target="_blank"
-                        className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
-                        rel="noreferrer"
-                      >
-                        <ExternalLink size={18} />
-                        View Live
-                      </a>
+                     
                       <a
                         href="https://github.com/ThendoRavi/common-grounds-app.git"
                         target="_blank"
@@ -775,55 +822,33 @@ function Home() {
                     <h3 className="text-2xl font-bold text-gray-800 mb-4">
                       Fat Guys - 3D Platformer Game
                     </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
+                    <p className="text-gray-600 mb-6 leading-relaxed">
                       <strong>Fat Guys</strong> is a 3D platformer game,
                       inspired by <em>Fall Guys</em>, developed using Three.js.
                       It challenges players to race against the clock while
                       navigating dynamic and visually engaging levels.
                     </p>
 
-                    <h4 className="font-bold text-gray-700 mb-2">
-                      Key Features:
-                    </h4>
-                    <ul className="list-disc pl-5 mb-6 space-y-1 text-gray-600">
-                      <li>
-                        <strong>Timer and Best-Time Tracking:</strong>{" "}
-                        Encourages competitive play by rewarding fast completion
-                        times.
-                      </li>
-                      <li>
-                        <strong>Lives System and Level Unlocking:</strong>{" "}
-                        Offers progression-based gameplay for an engaging
-                        experience.
-                      </li>
-                      <li>
-                        <strong>Rigged and Animated Player Models:</strong>{" "}
-                        Unique character designs fully created and animated in
-                        Blender.
-                      </li>
-                      <li>
-                        <strong>
-                          Dynamic Lighting and Textured Obstacles:
-                        </strong>{" "}
-                        Combines ambient, directional, and point lighting with
-                        detailed textures.
-                      </li>
-                      <li>
-                        <strong>Particle System:</strong> Adds atmospheric
-                        effects and dramatic respawn animations.
-                      </li>
-                    </ul>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      The game features a timer and best-time tracking system 
+                      that encourages competitive play by rewarding fast 
+                      completion times. A lives system and level unlocking 
+                      mechanism offer progression-based gameplay for an engaging 
+                      experience.
+                    </p>
+
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      Fat Guys showcases rigged and animated player models with 
+                      unique character designs fully created and animated in 
+                      Blender. The game combines dynamic lighting, including 
+                      ambient, directional, and point lighting, with detailed 
+                      textures to create visually striking obstacles. A particle 
+                      system adds atmospheric effects and dramatic respawn 
+                      animations throughout the gameplay.
+                    </p>
 
                     <div className="flex items-center gap-4">
-                      <a
-                        href="https://lamp.ms.wits.ac.za/~schickentendies/"
-                        target="_blank"
-                        className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
-                        rel="noreferrer"
-                      >
-                        <ExternalLink size={18} />
-                        Play Game
-                      </a>
+                      
                       <a
                         href="https://github.com/ThendoRavi/fat-guys.git"
                         target="_blank"
@@ -847,7 +872,52 @@ function Home() {
                   </div>
                 </div>
               </div>
-              {/* Campus Safety Project */}
+              
+
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                <div className="md:flex">
+                  <div className="md:w-2/3 p-8">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                      Phapano
+                    </h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      Phapano is a non-profit organisation founded in 2024 to 
+                      support psychology students in South Africa through 
+                      mentorship, community, and access to information and 
+                      opportunities.
+                    </p>
+                    <p className="text-gray-500 italic mb-6">
+                      Built using WordPress with Advanced Custom Fields (ACF), 
+                      Elementor, and custom field implementations to create a 
+                      flexible, user-friendly platform that serves the growing 
+                      community of psychology students.
+                    </p>
+
+                    <div className="flex items-center gap-4">
+                      <a
+                        href="https://phapano.com/"
+                        target="_blank"
+                        className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
+                        rel="noreferrer"
+                      >
+                        <ExternalLink size={18} />
+                        View Live
+                      </a>
+                    </div>
+                  </div>
+                  <div className="md:w-1/3">
+                    <div className="h-full flex items-center justify-center bg-gray-50 p-4">
+                      <img
+                        src={phapano || "/placeholder.svg"}
+                        alt="Phapano Website"
+                        className="w-full rounded-lg shadow-lg object-contain"
+                        style={{ maxHeight: "400px" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
                 <div className="md:flex">
                   <div className="md:w-2/3 p-8">
@@ -901,6 +971,7 @@ function Home() {
                   </div>
                 </div>
               </div>
+              
 
               <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
                 <div className="md:flex">
@@ -1038,7 +1109,7 @@ function Home() {
 
               <div className="mt-12 text-center">
                 <a
-                  href="/cv2025.pdf"
+                  href="/cv_2026.pdf"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium"
                 >
                   Download CV

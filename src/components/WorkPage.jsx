@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
 
 // Import your assets here
-import heroImage from "../assets/THero.png";
+import heroImage from "../assets/WorkHero.jpg";
 import html from "../assets/htmlT.svg";
 import css from "../assets/cssT.svg";
 import js from "../assets/jsT.svg";

@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { ChevronRight, ExternalLink, Github } from "lucide-react";
 
 // Import all your existing assets
-import hero from "../assets/THero.png";
+import hero from "../assets/NewHero.jpg";
 import coder from "../assets/code-slash.svg";
 import fix from "../assets/repair.png";
 import webDev from "../assets/cloud.svg";
@@ -162,7 +162,7 @@ function Home() {
                   </h1>
                   <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-4"></div>
                   <p className="text-lg text-gray-700 max-w-[600px] leading-relaxed">
-                    Computer Science Honours graduate from the University of
+                    Computer Science Masters candidate from the University of
                     Witwatersrand, completed in 2025.
                     <br />I have a passion for software development and cloud
                     computing.
@@ -482,6 +482,59 @@ function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+              {/* Master's Education */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-full -mr-20 -mt-20"></div>
+
+                <div className="relative z-10">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-gradient-to-br from-teal-500 to-emerald-500 w-12 h-12 rounded-lg flex items-center justify-center mr-4 shadow-md">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-white"
+                      >
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-800">
+                      MSc Computer Science
+                    </h3>
+                  </div>
+
+                  <div className="flex items-center mb-4">
+                    <p className="text-teal-600 font-bold">University of Witwatersrand</p>
+                    <span className="mx-2 text-gray-400">•</span>
+                    <p className="text-gray-500">2026 - Present</p>
+                  </div>
+
+                  <div className="mt-6">
+                    <h4 className="font-bold text-gray-700 mb-2">Research Topic</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Implicit Convention Formation in
+                      Bandwidth-Constrained Cooperative
+                      Multi-Agent Systems: A Graph Signaling
+                      Game Approach
+                    </p>
+                  </div>
+
+                  <div className="mt-4">
+                    <h4 className="font-bold text-gray-700 mb-3">Relevant Coursework</h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">N/A</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Honours Education */}
               <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-full -mr-20 -mt-20"></div>
@@ -626,65 +679,6 @@ function Home() {
                       </div>
                       <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
                         Analysis of Algorithms
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* High School Education */}
-              <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-full -mr-20 -mt-20"></div>
-
-                <div className="relative z-10">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-gradient-to-br from-teal-500 to-emerald-500 w-12 h-12 rounded-lg flex items-center justify-center mr-4 shadow-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-800">
-                      National Senior Certificate (IEB)
-                    </h3>
-                  </div>
-
-                  <div className="flex items-center mb-4">
-                    <p className="text-teal-600 font-bold">Maragon Mooikloof</p>
-                    <span className="mx-2 text-gray-400">•</span>
-                    <p className="text-gray-500">Matriculated: 2021</p>
-                  </div>
-
-
-                  <div className="mt-2">
-                    <h4 className="font-bold text-gray-700 mb-3">
-                      Relevant Coursework
-                    </h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
-                        Mathematics
-                      </div>
-                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
-                        Physical Science
-                      </div>
-                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
-                        Information Technology
-                      </div>
-                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
-                        Dramatic Arts
-                      </div>
-                      <div className="bg-gray-50 px-3 py-2 rounded-md text-gray-700">
-                        English HL
                       </div>
                     </div>
                   </div>

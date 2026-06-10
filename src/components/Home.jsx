@@ -163,8 +163,8 @@ function Home() {
                   <div className="h-1 w-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full my-4"></div>
                   <p className="text-lg text-gray-700 max-w-[600px] leading-relaxed">
                     Computer Science Masters candidate from the University of
-                    Witwatersrand, completed in 2025.
-                    <br />I have a passion for software development and cloud
+                    Witwatersrand.
+                    <br />I have a passion for research, software development and cloud
                     computing.
                   </p>
 

@@ -156,7 +156,7 @@ export default function NavBar() {
             ))}
             
             <a
-              href="/cv2025.pdf"
+              href="/cv2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 px-6 py-3 text-base font-medium bg-gradient-to-r from-teal-500 to-emerald-500 text-white rounded-full hover:opacity-90 transition-colors flex items-center gap-2 no-underline"

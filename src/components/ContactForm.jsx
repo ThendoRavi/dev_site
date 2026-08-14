@@ -21,9 +21,9 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-
     try {
-      const response = await fetch("https://dev-site-backend.onrender.com/api/contact-form", {
+      const endpoint = import.meta.env.VITE_CONTACT_API_URL || "/api/contact-form";
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
